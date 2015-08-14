@@ -50,10 +50,6 @@ camera.on('error', function(err) {
 
 
 
-climate.on('ready', function () {
-  
-});
-
 climate.on('error', function(err) {
   console.log('error connecting module', err);
 });

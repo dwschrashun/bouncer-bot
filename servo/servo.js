@@ -15,6 +15,7 @@ var servo = servolib.use(tessel.port['D']);
 
 var servo1 = 1; // We have a servo plugged in at position 1
 
+
 servo.on('ready', function () {
   var position = 0;  //  Target position of the servo between 0 (min) and 1 (max).
 
@@ -30,7 +31,7 @@ servo.on('ready', function () {
       servo.move(servo1, position);
 
       // Increment by 10% (~18 deg for a normal servo)
-      position += 1;
+      position += 0.1;
       if (position > 1) {
         position = 0; // Reset servo position
       }
